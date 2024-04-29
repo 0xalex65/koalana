@@ -1,6 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: Sansation;
+  font-weight: 300;
+  src: url("../assets/fonts/Sansation/Sansation_Light.woff");
+}
+
+@font-face {
+  font-family: Sansation;
+  font-weight: 400;
+  src: url("../assets/fonts/Sansation/Sansation_Regular.woff");
+}
+
+@font-face {
+  font-family: Sansation;
+  font-weight: 700;
+  src: url("../assets/fonts/Sansation/Sansation_Bold.woff");
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -30,4 +52,37 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.title-outline {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 11px;
+  background: #FF8D4D;
+  border-radius: 10px;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 21px;
+  height: 21px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background: #FF8D4D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 21px;
+  height: 21px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background: #FF8D4D;
+  cursor: pointer;
 }
